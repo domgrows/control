@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to open a new browser window.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+    WindowA = window.open("http://us01.proxy.teleduino.org/api/1.0/328.php?k=1DD61D76703DFEDE0EDC6F4C96A7CDF2&r=setDigitalOutput&pin=3&output=1", "_blank", "width=200, height=100");
+setTimeout(function(){ WindowA.close() }, 1000);
+
+}
+
+</script>
+
+</body>
+</html>
