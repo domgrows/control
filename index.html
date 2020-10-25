@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJla1aa278e05f21371995c28c271113e7c"/>
+<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJl2d34a8d48221bea7de12e2825118de68"/>
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:700,regular" rel="stylesheet" type="text/css">
   <meta name="generator" content="Google Web Designer 9.0.2.0915">
@@ -152,6 +152,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         }, 1000);
       }
       document.getElementById("btnBEGIN").disabled = true;
+      document.getElementById("btnARM").disabled = false;
     };
     gwd.ArmMe = function(event) {
       WindowA = window.open("http://us01.proxy.teleduino.org/api/1.0/328.php?k=1DD61D76703DFEDE0EDC6F4C96A7CDF2&r=definePinMode&pin=3&mode=1", "_blank", "width=200, height=100");
@@ -159,6 +160,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         WindowA.close()
       }, 1000);
       document.getElementById("btnBEGIN").disabled = false;
+      document.getElementById("btnARM").disabled = true;
     };
     gwd.deactBegin = function(event) {
       const button = document.querySelector('btnBegin');
